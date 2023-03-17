@@ -16,7 +16,7 @@ const product = ref();
 
 // objet pour récupérer l'identifiant pour récupérer la data exacte ${route.params.id}
 onMounted(() => {
-  fetch(`https://fakestoreapi.com/products/${route.params.id}`)
+  fetch(`https://api.storerestapi.com/products/${route.params.id}`)
     .then((response) => response.json())
     .then((data) => {
       product.value = data;
